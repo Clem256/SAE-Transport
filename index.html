@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Accueil</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <form action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug" method="post">
+        <header>
+            <h1 id="titre">Accueil</h1>
+        </header>
+        <h2>La différence entre les moyens de transport dit doux et non doux : </h2>
+        <p id="texteexplicatif">
+    
+        Il y a deux types de moyens de transport,les moyens de transport dit doux et les moyens de transport dit non doux.
+            Les modes de transport doux sont plus respectueux pour l'environnement, 
+            durable et possède un impact environnemental moins élevé (exemple 
+            vélo,marche,tram,trotinette,...).
+            Pour les moyens de transport dit non doux,leur impact environnemental 
+            est plus important et il consomme plus d'énergie non respectueuse de l'environnement (comme le pétrole)
+            (exemple : voiture personelle, moto , ....).</p>
+        <h2 id="Diffmoyenst">Les différents moyens de transports doux disponibles sur le campus de l'université Claude Bernard :</h2>
+        <div class="conteneur">
+        <div class="colonne">
+            <h3 id="moycomm">Un moyen de transport en commun: </h3>
+            <h4>Sur le site de l'université Claude Bernard,on peut trouver un moyen de transport en commun doux et plus respectueux de l'environnement
+                ,c'est à dire le tram.</h4>  
+        </div>
+        <div class="colonne"> 
+            <a href="Transports_en_commun.html"><img src="assets/image/imagetram.jpg" alt="Image_d'un_tram_de_lyon" id="img1"/></a>  
+        </div>
+        <div class="colonne">
+            <h3 id="moyperso">Les moyens de transports personnels: </h3>
+            <h4>Sur le site du campus,on peut trouver un moyen de transport en libre service,les vélos Vélo'v ou encore la marche.</h4> 
+        </div>
+        <div class="colonne">
+            <a href="Transports_personels.html"><img src="assets/image/imagevelov.jpg" alt="Image_Velov" id="img2"/></a>    
+        </div>
+    </div>
+    <div class="non-col">
+        <h4>Nous vous proposons un questionnaire pour connaitre votre avis sur différents aspects des transports en commun ou personnel doux .Si vous voulez répondre à ce questionnaire ,
+            voici le lien :<a href="index.html#Questionnaire" id="t1">lien du questionnaire</a>
+        </h4>
+        <div id="Questionnaire">
+            <h4>
+                Questionnaire
+            </h4>
+                <label for="Nom">Nom :</label>
+                <input type="text" name="Nom" id="Nom" size="50" maxlength="50">
+                <label for="Prénom">Prénom :</label>
+                <input type="text" name="Prénom" id="Prénom" size="50" maxlength="50" >
+                <label for="Filière">Filière :</label>
+                <input type="text" name="Filière" id="Filière" size="50" maxlength="50">
+                <h4>Partie 1 :Les tram </h4>
+                    <label for="Station">A qu'elle station prenez-vous le tram?</label>
+                    <select name="Station" id="Station">
+                    <option value="IUT Feyssine">IUT Feyssine</option>
+                    <option value="Croix-Luizet">Croix-Luizet</option>
+                    <option value="Insa Einstein">Insa Einstein</option>
+                    <option value="Gaston Berger">La Doua - Gaston Berger</option>
+                    <option value="Gaston Berger">Université Lyon 1</option>
+                    </select>
+                 <section>
+                    <div class="conteneur">
+                        <div class="colonne">
+                    <h4>Que pensez-vous du trafic dans les tram?</h4>
+                        <label for="quest">&nbsp;</label>
+                        <textarea name="trafic" rows="8" cols="45" maxlength="5000" placeholder="Message ...." id="quest"></textarea>
+                    </div>
+                    <div class="colonne"> 
+                        <h4>Avez-vous des suggestions pour l'amélioration des transports ?</h4>
+                        <label for="quest1">&nbsp;</label>
+                        <textarea name="tAméliorationt" rows="8" cols="45" maxlength="5000" placeholder="Message ...." id="quest1"></textarea>
+                    </div>
+                    </div>
+                </section>
+                    <h4>Partie 2 : Le vélo</h4>
+                     <fieldset>
+                         <legend>Utilisez-vous un vélo sur le site de la Doua?</legend>
+                            
+                            <input type="radio" name="utiliserv" id="Oui" value="Oui" />
+                            <label for="Oui">Oui</label>
+                           
+                             <input type="radio" name="utiliserv" id="Non" value="Non" checked=""/>
+                             <label for="Non">Non</label>
+                            </fieldset>
+                    <section>
+                        <div class="conteneur">
+                            <div class="colonne">
+                            
+                        <h4>Si oui, que pensez-vous de la disponibilité des vélos en libre service? </h4>
+                            <label for="quest2">&nbsp;</label>
+                            <textarea name="dispov" rows="8" cols="45" maxlength="5000" placeholder="Message ...." id="quest2"></textarea>
+                            </div>
+                            <div class="colonne">
+                        <h4>Avez-vous des suggestions pour l'amélioration et la disponibilité des vélos en libre-service? </h4>
+                            <label for="quest3">&nbsp;</label>
+                            <textarea name="suggv" rows="8" cols="45" maxlength="5000" placeholder="Message ...." id="quest3"></textarea>
+                            </div>
+                        </div>
+                    </section>
+                    <h4>Partie 3 : Autre </h4>
+                    <section >
+                        <h4>Avez-vous des suggestions pour l'amélioration global des moyens de transport doux ? </h4>
+                            <label for="quest4">&nbsp;</label>
+                            <textarea name="suggglobal" rows="8" cols="45" maxlength="5000" placeholder="Message ...." id="quest4"></textarea>
+                    </section>
+                         <button type="submit">Envoyer</button>
+                    <h4>Nous vous remercions d'avoir pris le temps de répondre à ce questionnaire.</h4>
+            </div>
+                <h4>Pour fermer le questionnaire,cliquer sur le lien suivant : <a href="index.html#dQuestionnaire" id="t2">Fermeture du questionnaire</a> </h4>
+                <footer > 
+                    <h3>Développer par Montcel Nicolas et Montagnon Clément</h3>
+                    <img src="assets/image/LogoLyon1Off_CoulRvb72dpi.jpg" alt="Logo Université Lyon 1" id="img3"/>
+                </footer>
+    </div>
+    </form>
+</body>
+</html>
